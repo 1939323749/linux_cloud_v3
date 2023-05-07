@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# 判断目录FILE3-5K是否存在，如果存在则删除
+if [ -d "FILE3-5K" ]
+then
+  rm -rf FILE3-5K
+fi
+
+# 创建目录FILE3-5K
+mkdir FILE3-5K
+
+# 复制小于5k的文件到FILE3-5K目录
+find FILE3 -type f -size -5120c -exec cp {} FILE3-5K \;
+
+echo "Copy completed."

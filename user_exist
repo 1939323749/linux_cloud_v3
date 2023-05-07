@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo -n "Please input a username:"
+read username
+
+if id -u "$username" >/dev/null 2>&1
+then
+  shell=$(grep "^$username:" /etc/passwd | cut -d: -f7)
+  echo "$username's shell is $shell"
+else
+  echo "$username not exists."
+fi

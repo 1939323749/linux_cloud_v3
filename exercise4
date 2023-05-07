@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# 判断目录FILE4是否存在，如果存在则删除
+if [ -d "FILE4" ]
+then
+  rm -rf FILE4
+fi
+
+# 创建目录FILE4
+mkdir FILE4
+
+# 新建100个文件
+touch FILE4/file{001..100}
+# 打包并压缩文件
+tar -czvf allfile.tar.gz FILE4/
+
+chmod u+rwx,g+r-w,o+r ./allfile.tar.gz
