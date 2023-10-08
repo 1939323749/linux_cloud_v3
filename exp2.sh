@@ -7,6 +7,7 @@ mkdir ~/exp2/Mydir/MyBin/Tool
 mkdir ~/exp2/Mydir/MyBin/Game
 mkdir ~/exp2/Mydir/MyMusic/Chinese
 mkdir ~/exp2/Mydir/MyMusic/English
+mkdir -p ~/exp2/Mydir/Mydoc
 cat ~/exp2/vim.txt > ~/exp2/Mydir/Mydoc/first
 echo ":r ~/exp2/vim.txt">>~/.viminfo
 cat ~/exp2/vim.txt ~/exp2/vim.txt>temp1
@@ -20,3 +21,5 @@ mv ~/exp2/TESTdir ~/exp2/Mydir
 cd ~/exp2/Mydir/TESTdir
 find *.c>~/exp2/Mydir/c.file
 find AB*|find *x -exec mv {} {}.txt \;
+
+check2

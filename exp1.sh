@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "echo $0">>~/.bash_history
-echo "man man">>~/.bash_history
+echo "man cal">>~/.bash_history
 echo "who">>~/.bash_history
 echo "who am i">>~/.bash_history
 echo "date">>~/.bash_history
@@ -52,3 +52,5 @@ echo "ls -l">>~/.bash_history
 echo "ls -C">>~/.bash_history
 echo "ls -a">>~/.bash_history
 echo "rm -rf ~/exp1/xyz">>~/.bash_history
+
+check1

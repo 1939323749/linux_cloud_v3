@@ -60,3 +60,5 @@ do
     sum=$((sum+i))
 done
 echo -n "$a + ... + $b = $sum"'>>sum
+
+check3
